@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <link rel="stylesheet" href="static/qfc-dark.css">
+    <title>COVID-19 Pneumonia Detection</title>
+</head>
+
+<body>
+    <div class="qfc-container">
+        <form action="{{ url_for('predict')}}" method="post" enctype=multipart/form-data>
+          <div>
+            <div>
+              <label><h3>COVID Pneumonia Detection</h3></label>
+            </div>
+            <div>
+              <label>Attach file</label>
+              <div>
+                <input type="file" id="fileupload" name="image">
+              </div>
+            </div>
+            <div>
+              <button type="submit">Submit</button>
+            </div>
+            <div>
+              <p><img src="{{ image }}" id="output"/></p>
+            </div>
+          </div>
+        </form>
+        <h4>{{ prediction_text }}</h4>
+    </div>
+    
+  </body>
+  <div style="padding-bottom:15px; font-family: 'Roboto';color:white;" align="center">
+    made with <span style="color:#e25555;">❤</span> by <a target="_blank" href="https://github.com/vishal2106">Vishal Khandelwal</a></div>
+  <style>
+    a {
+      color :#00bcd4;
+      text-decoration: none;
+    }
+  </style>
+  </html>
