@@ -12,15 +12,15 @@ A project using tensorflow model to train X ray images and identify if the perso
 ### Try it out
 
 ```sh
-$ git clone https://github.com/vishal2106/COVID_Pneumonia_Detection.git
-$ cd COVID_Pneumonia_Detection
+$ git clone https://github.com/vishal2106/COVID_Pneumonia.git
+$ cd COVID_Pneumonia
 $ cd flask_server
 $ pip install -r requirements
 $ python app.py
 ```
 ## In another terminal run the tensorflow image (Make sure you have docker installed)
 ```sh
-$ cd COVID_Pneumonia_Detection
+$ cd COVID_Pneumonia
 $ sudo bash serving.sh
 ```
 ### Go to localhost:5000 in your browser to try out the app
