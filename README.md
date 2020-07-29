@@ -5,7 +5,9 @@ A project using tensorflow model to train X ray images and identify if the perso
 * [Flask] - Used to process the input and render output to the client
 * [Tensorflow] - Used CNN architecture to train weights for X-ray images, also used TF-serving so that it's easy to make version control of model and any change in model is not affected in client's code.
 * [Docker] - Used to serve tensorflow model for predictions
-![GitHub Logo](/readme_images/logo-flask.png) ![GitHub Logo](/readme_images/tensorflow.png)
+
+![GitHub Logo](/readme_images/logo-flask.png) 
+![GitHub Logo](/readme_images/tensorflow.png)
 ![GitHub Logo](/readme_images/docker.png)
 
 ### Architecture
